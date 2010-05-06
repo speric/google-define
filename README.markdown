@@ -11,11 +11,8 @@ google-define
 	git submodule add git://github.com/speric/google-define.git vendor/plugins/google-define
 
 **Use**
-	GoogleDefine::define("tasty") #returns the <li> elements of http://www.google.com/search?q=define%3Atasty
+	GoogleDefine::define("tasty")
 
-**TODO**
+Returns an Array of the <li> elements from [http://www.google.com/search?q=define%3Atasty](http://www.google.com/search?q=define%3Atasty), with the HTML stripped (except for quotings).  If there is no definition for the word given, an empty Array will be returned.
 
-* remove markup from definitions (HTML, etc)
-* add validation methods (word.valid? or word.has_definitions?)
-* documentation
 
