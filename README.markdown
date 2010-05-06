@@ -1,13 +1,23 @@
-GoogleDefine
+google-define
 ============
 
-Introduction goes here.
+*Get word definitions from Google*
 
+Required gems
+--------------
+*hpricot
 
-Example
-=======
+Install
+--------------
+	git submodule add git://github.com/speric/google-define.git vendor/plugins/google-define
 
-Example goes here.
+Use
+--------------
+	GoogleDefine::define("tasty") #returns the <li> elements of http://www.google.com/search?q=define%3Atasty
 
+TODO
+--------------
+* remove markup from definitions (HTML, etc)
+* add validation methods (word.valid? or word.has_definitions?)
+* documentation
 
-Copyright (c) 2010 [name of plugin creator], released under the MIT license
